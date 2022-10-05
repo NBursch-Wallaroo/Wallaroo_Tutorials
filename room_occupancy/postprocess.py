@@ -11,13 +11,13 @@ def actual_postprocess(predictions):
 #     predictions = predictions.tolist()
     for i in range(len(predictions)):
         predictions[i] = int(round(predictions[i]))
-        #if > max make max (currently max = 3)
-        if (predictions[i] > 3):
-            predictions[i] = 3
-        #if < 0 make 0
-        elif (predictions[i] < 0):
-            predictions[i] = 3
-        #return result
+#         #if > max make max (currently max = 3)
+#         if (predictions[i] > 3):
+#             predictions[i] = 3
+#         #if < 0 make 0
+#         elif (predictions[i] < 0):
+#             predictions[i] = 0
+#         #return result
     return predictions
 
 def wallaroo_json(data):
